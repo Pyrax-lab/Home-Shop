@@ -1,0 +1,90 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block footer %}
+<footer class="py-4 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Home Python Hub Studio 2023</p>
+    </div>
+</footer>
+{% endblock footer %}
+
+{% block content %}
+<!-- Контент -->
+
+            <!-- Контент на странице -->
+            <div class="row">
+                <!-- Форма фильтров -->
+                <div class="dropdown mb-2">
+                    <button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Фильтры
+                    </button>
+            
+                    <form action="" method="get" class="dropdown-menu bg-dark" data-bs-theme="dark">
+                        <div class="form-check text-white mx-3">
+                            <input class="form-check-input" type="checkbox" name="on_sale" id="flexCheckDefault" value="on">
+                            <input type="hidden" name="q" value="request.GET.q">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Товары по акции
+                            </label>
+                        </div>
+                        <p class="text-white mx-3 mt-3">Сортировать:</p>
+                        <div class="form-check text-white mx-3">
+                            <input class="form-check-input" type="radio" name="order_by" id="flexRadioDefault1" value="default" checked>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                По умолчанию
+                            </label>
+                        </div>
+                        <div class="form-check text-white mx-3">
+                            <input class="form-check-input" type="radio" name="order_by" id="flexRadioDefault2" value="price">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                От дешевых к дорогим
+                            </label>
+                        </div>
+                        <div class="form-check text-white mx-3">
+                            <input class="form-check-input" type="radio" name="order_by" id="flexRadioDefault3" value="-price">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                От дорогих к дешевым
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary mx-3 mt-3">Применить</button>
+                    </form>
+                </div>
+
+
+                {% for i in product %}
+
+                    <!-- Карта товара -->
+                <div class="col-lg-4 col-md-6 p-4">
+                    <div class="card border-primary rounded custom-shadow">
+                        {% if i.image %}
+                            <img src="{{i.image.url}}" class="card-img-top" alt="...">
+                        {% endif %}
+                        
+                        <div class="card-body">
+                            <a href="../goods/product.html">
+                                <p class="card-title">{{i.name}}</p>
+                            </a>
+                            <p class="card-text text-truncate">{{i.description}}</p>
+                            <p class="product_id">id: <s>{{i.id_product}}</s></p>
+                            <div class="d-flex justify-content-between">
+                                {% comment %} <p><s>100</s> $</p>   
+                                <p><strong>90.00 $</strong></p>
+                                <span class="badge bg-warning text-dark">Скидка 10.00 %</span> {% endcomment %}
+                               <p><strong>{{i.price}} $</strong></p> 
+                                <a href="#" class="btn add-to-cart">
+                                    <img class="mx-1" src="{% static "deps/icons/cart-plus.svg" %}" alt="Catalog Icon"
+                                        width="32" height="32">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {% endfor %}
+                
+                
+
+            </div>
+{% endblock content %}

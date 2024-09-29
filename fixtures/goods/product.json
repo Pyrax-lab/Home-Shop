@@ -1,0 +1,146 @@
+[
+    {
+        "model": "goods.product",
+        "pk": 1,
+        "fields": {
+            "name": "Чайный стол",
+            "slug": "chajnyj-stolik-i-tri-stula",
+            "description": "Чайный столик для питья пойла и хаванья печенек",
+            "image": "",
+            "count": 5,
+            "category": 9
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 2,
+        "fields": {
+            "name": "Чайный столик и два стула",
+            "slug": "chajnyj-stolik-i-dva-stula",
+            "description": "Чайный столик и два стула для того чтобы сидеть с друзьями",
+            "image": "",
+            "count": 9,
+            "category": 6
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 3,
+        "fields": {
+            "name": "Двуспальная кровать",
+            "slug": "dvuhspalnaya-krovat",
+            "description": "Двуспальная кровать для того чтобы спать с тетей",
+            "image": "",
+            "count": 33,
+            "category": 8
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 4,
+        "fields": {
+            "name": "Кухойной стол с ракоминой",
+            "slug": "kuhonnyj-stol-s-rakovinoj",
+            "description": "Кухойной стол с ракоминой чтоб мыть попку и посду одновременно",
+            "image": "",
+            "count": 6,
+            "category": 6
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 5,
+        "fields": {
+            "name": "Книжной стол со встройко",
+            "slug": "kuhonnyj-stol-s-vstrojkoj",
+            "description": "Книжка в попку и пошел нюхать уроки",
+            "image": "",
+            "count": 4,
+            "category": 6
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 6,
+        "fields": {
+            "name": "Угловой видан для гостиной",
+            "slug": "uglovoj-divan-dlya-gostinnoj",
+            "description": "Угловой видан для гостиной что пригласить друщей и кого е6ще",
+            "image": "",
+            "count": 6,
+            "category": 8
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 7,
+        "fields": {
+            "name": "Столик для кровати",
+            "slug": "prikrovatnyj-stolik",
+            "description": "Столик для кровати для будильника столик.",
+            "image": "",
+            "count": 7,
+            "category": 10
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 8,
+        "fields": {
+            "name": "Дивна ржачный",
+            "slug": "divan-obyknovennyj",
+            "description": "Дивна ржачныйДивна ржачныйДивна ржачныйДивна ржачный",
+            "image": "",
+            "count": 7,
+            "category": 8
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 9,
+        "fields": {
+            "name": "Стул офисный",
+            "slug": "stul-ofisnyj",
+            "description": ".Стул офисный",
+            "image": "",
+            "count": 5,
+            "category": 11
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 10,
+        "fields": {
+            "name": "Ратсение",
+            "slug": "rastenie",
+            "description": "Ратсение.",
+            "image": "",
+            "count": 13,
+            "category": 12
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 11,
+        "fields": {
+            "name": "Цветок стилизованный",
+            "slug": "cvetok-stilizirovannyj",
+            "description": "Цветок стилизованный",
+            "image": "",
+            "count": 12,
+            "category": 12
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 12,
+        "fields": {
+            "name": "Прикроватный стол",
+            "slug": "prikrovatnyj-stolik-domashnij",
+            "description": "Прикроватный стол.",
+            "image": "",
+            "count": 23,
+            "category": 8
+        }
+    }
+]

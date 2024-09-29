@@ -1,0 +1,58 @@
+[
+    {
+        "model": "goods.category",
+        "pk": 6,
+        "fields": {
+            "name": "kuhnya",
+            "slug": "kuhnya"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 7,
+        "fields": {
+            "name": "all",
+            "slug": "all"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 8,
+        "fields": {
+            "name": "spalnya",
+            "slug": "spalnya"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 9,
+        "fields": {
+            "name": "gostinnaya",
+            "slug": "gostinnaya"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 10,
+        "fields": {
+            "name": "ofis",
+            "slug": "ofis"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 11,
+        "fields": {
+            "name": "furnitura",
+            "slug": "furnitura"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 12,
+        "fields": {
+            "name": "dekor",
+            "slug": "dekor"
+        }
+    }
+]
