@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from main import views
-from app.settings import DEBUG
+
 from app import settings
 from django.conf.urls.static import static
 
@@ -27,6 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include("main.urls", namespace="main")),
     path("catalog/", include("goods.urls", namespace="goods")),
+    path("user/", include("users.urls", namespace="user")),
     
 ]  
 
@@ -38,7 +39,8 @@ if settings.DEBUG:
 http://127.0.0.1:8000/
 http://127.0.0.1:8000/admin/
 http://127.0.0.1:8000/about/
-http://127.0.0.1:8000/catalog/
-http://127.0.0.1:8000/catalog/product/
+http://127.0.0.1:8000/catalog/search/
+http://127.0.0.1:8000/catalog/<slug:category_slug>
+http://127.0.0.1:8000/catalog/item/<slug:product_id>
 
 """
